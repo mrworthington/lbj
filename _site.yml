@@ -1,0 +1,24 @@
+name: "R Markdown @ LBJ"
+output_dir: "."
+navbar:
+  title: "R Markdown @ LBJ"
+  type: inverse
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+    - text: "Mac Users"
+      icon: fa-apple
+      href: mac.html
+    - text: "Windows Users"
+      icon: fa-windows
+      href: windows.html
+    - text: "Others"
+      icon: fa-home
+      href: others.html
+output:
+  html_document:
+    highlight: textmate
+    include:
+      before_body: header.html
+    css: [css/styles.css, css/normalize.css]
