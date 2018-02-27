@@ -37,7 +37,21 @@ font-weight: 700;
 h1.title {
 font-size: 38px;
 font-weight: 700;
+}
+
+.subtitle {
 margin-bottom: 40px;
+margin-top: 0px;
+}
+
+.section {
+margin-top: 20px; 
+margin-bottom: 30px;
+}
+
+p {
+margin-top: 20px; 
+margin-bottom: 30px;
 }
 
 body {

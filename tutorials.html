@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Video Tutorials</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,9 +19,13 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52682113-1"></script>
 <script>
@@ -177,6 +181,107 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -252,16 +357,32 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Video Tutorials</h1>
+<h3 class="subtitle"><em>For Help With Installing R &amp; RStudio</em></h3>
 
 </div>
 
 
-<div id="lbj" class="section level1">
-<h1>lbj</h1>
+<p><strong>Note:</strong> Clicking the links below will take you Lynda.com’s website. Once you sign in with your UT EID username and password, you’ll be able to access video tutorials that guide you through the installation setup for R and RStudio.</p>
+<div id="video-1-installing-r-on-your-computer" class="section level2">
+<h2>Video 1: Installing R on Your Computer</h2>
+<ul>
+<li><strong>Link:</strong> <a href="https://www.lynda.com/R-tutorials/Installing-R-your-computer/120612/129820-4.html?org=utexas.edu">From the “Learning R” Course on Lynda.com</a></li>
+<li><strong>Note:</strong> In the video, they are installing an older version of R. Since the video is older, you’ll see a newer version of R on the page referenced in the video.</li>
+</ul>
+</div>
+<div id="video-2-using-rstudio" class="section level2">
+<h2>Video 2: Using RStudio</h2>
+<ul>
+<li><strong>Link:</strong> <a href="https://www.lynda.com/R-tutorials/Using-RStudio/120612/129821-4.html?org=utexas.edu">From the “Learning R” Course on Lynda.com</a></li>
+<li><strong>Note:</strong> In the video, the RStudio website is an older version than the one you’ll see. Don’t let that throw you off, as you only have to worry about installing R Studio.</li>
+</ul>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

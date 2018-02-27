@@ -1,5 +1,6 @@
 ---
-title: "For Windows"
+title: "For Windows Users"
+subtitle: Pre-Workshop Actions
 output: 
   html_document: 
     toc: yes

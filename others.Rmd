@@ -1,5 +1,6 @@
 ---
 title: "For Other Platforms"
+subtitle: Pre-Workshop Actions
 output: 
   html_document: 
     toc: yes

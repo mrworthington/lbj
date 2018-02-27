@@ -1,0 +1,25 @@
+---
+title: "Video Tutorials"
+subtitle: For Help With Installing R & RStudio
+output: 
+  html_document: 
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Note:** Clicking the links below will take you Lynda.com's website. Once you sign in with your UT EID username and password, you'll be able to access video tutorials that guide you through the installation setup for R and RStudio.
+
+## Video 1: Installing R on Your Computer
+
+  * **Link:** [From the "Learning R" Course on Lynda.com](https://www.lynda.com/R-tutorials/Installing-R-your-computer/120612/129820-4.html?org=utexas.edu)
+  * **Note:** In the video, they are installing an older version of R. Since the video is older, you'll see a newer version of R on the page referenced in the video.  
+
+## Video 2: Using RStudio
+
+  * **Link:** [From the "Learning R" Course on Lynda.com](https://www.lynda.com/R-tutorials/Using-RStudio/120612/129821-4.html?org=utexas.edu)
+  * **Note:** In the video, the RStudio website is an older version than the one you'll see. Don't let that throw you off, as you only have to worry about installing R Studio.  
+
+

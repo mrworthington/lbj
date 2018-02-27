@@ -1,5 +1,6 @@
 ---
-title: "For Mac OS X"
+title: "For Mac OS X Users"
+subtitle: Pre-Workshop Actions
 output: 
   html_document: 
     toc: yes

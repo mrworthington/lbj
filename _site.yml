@@ -5,20 +5,24 @@ navbar:
   type: inverse
   left:
     - text: "Home"
-    # icon: fa-home
       href: index.html
-    - text: "Mac Users"
-    # icon: fa-apple
-      href: mac.html
-    - text: "Windows Users"
-    # icon: fa-windows
-      href: windows.html
-    - text: "Others"
-    # icon: fa-home
-      href: others.html
+    - text: "Pre-Workshop Actions"
+      menu:
+      - text: "Mac Users"
+        icon: fa-apple fa-fw fa-lg
+        href: mac.html
+      - text: "Windows Users"
+        icon: fa-windows fa-fw fa-lg
+        href: windows.html
+      - text: "Other Users"
+        icon: fa-desktop fa-fw fa-lg
+        href: others.html
+      - text: "---------"
+      - text: "Video Tutorials"
+        icon: fa-play-circle fa-fw fa-lg
+        href: tutorials.html
   right:
     - text: "Get Help"
-    # icon: fa-home
       href: mailto:worthington.matthew@utexas.edu?Subject=Help%20with%20pre-workshop%20actions
     - icon: fa-github fa-lg
       href: https://github.com/mrworthington
