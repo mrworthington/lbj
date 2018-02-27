@@ -6,15 +6,15 @@ output:
 ---
 **Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-## Step 1: Download R, Version 3.4.3
+## Step 1: Download R
 
   * [Download link For Other Platforms](https://cran.rstudio.com)
 
-## Step 2: Download RStudio, Version 1.1.423
+## Step 2: Download RStudio
 
   * [Download link For Other Platforms](https://www.rstudio.com/products/rstudio/download/#download)
 
-## Step 3: Open RStudio & Install `rmarkdown` & `tinytex` 
+## Step 3: Install `rmarkdown` & `tinytex` 
 
 * Open RStudio from you applications folder.
 * Then, copy & paste this code into the console: ```install.packages("devtools")```

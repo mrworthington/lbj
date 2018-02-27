@@ -7,15 +7,15 @@ output:
 
 **Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-## Step 1: Download R, Version 3.4.3
+## Step 1: Download R
 
   * [Download link For Windows](https://cran.rstudio.com/bin/windows/base/R-3.4.3-win.exe)
   
-## Step 2: Download RStudio, Version 1.1.423
+## Step 2: Download RStudio
 
   * [Download link For Windows Vista/7/8/10](https://download1.rstudio.org/RStudio-1.1.423.exe)
 
-## Step 3: Open RStudio & Install `rmarkdown` & `tinytex` 
+## Step 3: Install `rmarkdown` & `tinytex` 
 
 After you've Steps 1-3, follow these steps:
 

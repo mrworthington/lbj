@@ -11,11 +11,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 **Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-## Step 1: Download R, Version 3.4.3
+## Step 1: Download R
 
   * [Download link For Mac OS X](https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg)
 
-## Step 2: Download RStudio, Version 1.1.423
+## Step 2: Download RStudio
 
   * [Download link For Mac OS X 10.6+](https://download1.rstudio.org/RStudio-1.1.423.dmg)
 
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
   * [Download link for XQuartz](https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg)
 
-## Step 4: Open RStudio & Install `rmarkdown` & `tinytex` 
+## Step 4: Install `rmarkdown` & `tinytex` 
 
 After you've Steps 1-4, follow these steps:
 

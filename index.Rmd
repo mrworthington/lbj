@@ -9,9 +9,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Getting Started
 
-To make this workshop run smoothly, it's important to come prepared with the right software installed on the computer you intend to use. On the menu above, you'll see links with instructions for each software platform. It should be simple enough. Just download and run each installer required for your platform. In case you're wondering, all of this is free so you won't need to worry about paying anything. So, choose your platform and get started
+To make this workshop run smoothly, it's important to come prepared with the right software installed on the computer you intend to use. On the menu above, you'll see links with instructions for each software platform. It should be simple enough. Just download and run each installer required for your platform. In case you're wondering, **all of this software is free** so you won't need to worry about paying anything. So, choose your platform below and get started.
 
-If you have trouble, shoot me an email using the "Get Help" link up on the right and I'll see what I can do. As long as you follow, the directions I've provided, you should be ready for the R Markdown workshop.
+If you have trouble, shoot me an email using the "Get Help" link up on the right and I'll see what I can do. As long as you follow the directions I've provided, you should be ready for the R Markdown workshop on March 9th.
 
 Good luck and reach out if you need anything!
 
