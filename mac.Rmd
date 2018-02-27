@@ -1,7 +1,5 @@
 ---
-title: "Home"
-author: "Matthew R. Worthington, M.Ed."
-date: "2/26/2018"
+title: "For Mac Users"
 output: html_document
 ---
 
@@ -9,22 +7,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+### Step 1: Download R, Version 3.4.3
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+**Note:** When you click the link below, you'll be taken to a website
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+  * [Download link For Mac OS X](https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg)
 
-```{r cars}
-summary(cars)
-```
+### Step 2: Download RStudio, Version 1.1.423
 
-## Including Plots
+  * [Download link For Mac OS X 10.6+](https://download1.rstudio.org/RStudio-1.1.423.dmg)
 
-You can also embed plots, for example:
+### Step 3: Install XQuartz
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+  * [Download link for XQuartz](https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+### Step 3: Install the `rmarkdown` & `tinytex` Package
+
+After you've doneTo do that, copy the following code

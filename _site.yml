@@ -2,7 +2,6 @@ name: "R Markdown @ LBJ"
 output_dir: "."
 navbar:
   title: "R Markdown @ LBJ"
-  type: inverse
   left:
     - text: "Home"
       icon: fa-home
@@ -18,7 +17,7 @@ navbar:
       href: others.html
 output:
   html_document:
-    highlight: textmate
+    theme: null
     include:
-      before_body: header.html
+      in_header: header.html
     css: [css/styles.css, css/normalize.css]

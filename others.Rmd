@@ -1,7 +1,5 @@
 ---
-title: "Home"
-author: "Matthew R. Worthington, M.Ed."
-date: "2/26/2018"
+title: "For Windows"
 output: html_document
 ---
 

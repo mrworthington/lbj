@@ -1,7 +1,5 @@
 ---
 title: "Home"
-author: "Matthew R. Worthington, M.Ed."
-date: "2/26/2018"
 output: html_document
 ---
 
@@ -9,11 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+Hey Everyone,
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+In order to make this workshop run smoothly, I'm asking everyone to make sure they have these installed on the computers they intend to use for the workshop. In case you're wondering, all of this is free so you won't need to worry about paying anything. If you open this PDF on the computer you intend to use for the workshop, I've hyperlinked the download links in the text below so it's easier for you to get what you need. If you have any problems, let me know and I'll do my best to help before March 9th. 
 
 ```{r cars}
 summary(cars)
