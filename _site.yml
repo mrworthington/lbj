@@ -2,6 +2,7 @@ name: "R Markdown @ LBJ"
 output_dir: "."
 navbar:
   title: "R Markdown @ LBJ"
+  type: inverse
   left:
     - text: "Home"
     # icon: fa-home
@@ -15,9 +16,22 @@ navbar:
     - text: "Others"
     # icon: fa-home
       href: others.html
+  right:
+    - text: "Get Help"
+    # icon: fa-home
+      href: mailto:worthington.matthew@utexas.edu?Subject=Help%20with%20pre-workshop%20actions
+    - icon: fa-github fa-lg
+      href: https://github.com/mrworthington
 output:
   html_document:
-    theme: paper
+    self_contained: false
+    theme: cosmo
+    highlight: textmate
+    mathjax: null
+    lib_dir: libs
+    css: css/styles.css
     include:
       in_header: header.html
-    css: css/style.css
+    toc_depth: 3
+    toc_float:
+      collapsed: false

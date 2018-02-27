@@ -1,28 +1,25 @@
 ---
-title: "For Windows"
-output: html_document
+title: "For Other Platforms"
+output: 
+  html_document: 
+    toc: yes
 ---
+**Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+## Step 1: Download R, Version 3.4.3
 
-## R Markdown
+  * [Download link For Other Platforms](https://cran.rstudio.com)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+## Step 2: Download RStudio, Version 1.1.423
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+  * [Download link For Other Platforms](https://www.rstudio.com/products/rstudio/download/#download)
 
-```{r cars}
-summary(cars)
-```
+## Step 3: Open RStudio & Install `rmarkdown` & `tinytex` 
 
-## Including Plots
+* Open RStudio from you applications folder.
+* Then, copy & paste this code into the console: ```install.packages("devtools")```
+* Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
+tinytex::install_tinytex()```
+  - If the console prompts you to install dependencies, type "y" and hit enter.
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![Image: Once you paste the code, you should hit enter.](images/console.png)

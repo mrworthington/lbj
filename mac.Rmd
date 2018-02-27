@@ -1,15 +1,17 @@
 ---
-title: "For Mac Users"
-output: html_document
+title: "For Mac OS X"
+output: 
+  html_document: 
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Step 1: Download R, Version 3.4.3
+**Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-**Note:** When you click the link below, you'll be taken to a website
+## Step 1: Download R, Version 3.4.3
 
   * [Download link For Mac OS X](https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg)
 
@@ -21,6 +23,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
   * [Download link for XQuartz](https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg)
 
-## Step 3: Install the `rmarkdown` & `tinytex` Package
+## Step 4: Open RStudio & Install `rmarkdown` & `tinytex` 
 
-After you've doneTo do that, copy the following code
+After you've Steps 1-4, follow these steps:
+
+* Open RStudio from you applications folder.
+* Then, copy & paste this code into the console: ```install.packages("devtools")```
+* Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
+tinytex::install_tinytex()```
+  - If the console prompts you to install dependencies, type "y" and hit enter.
+
+![Image: Once you paste the code, you should hit enter.](images/console.png)
+
+

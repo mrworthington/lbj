@@ -1,5 +1,5 @@
 ---
-title: "Getting Started"
+title: "Pre-Workshop Actions"
 output: html_document
 ---
 
@@ -7,21 +7,21 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Getting Started
 
-Hey Everyone,
+To make this workshop run smoothly, it's important to come prepared with the right software installed on the computer you intend to use. On the menu above, you'll see links with instructions for each software platform. It should be simple enough. Just download and run each installer required for your platform. In case you're wondering, all of this is free so you won't need to worry about paying anything. So, choose your platform and get started
 
-In order to make this workshop run smoothly, I'm asking everyone to make sure they have these installed on the computers they intend to use for the workshop. In case you're wondering, all of this is free so you won't need to worry about paying anything. If you open this PDF on the computer you intend to use for the workshop, I've hyperlinked the download links in the text below so it's easier for you to get what you need. If you have any problems, let me know and I'll do my best to help before March 9th. 
+If you have trouble, shoot me an email using the "Get Help" link up on the right and I'll see what I can do. As long as you follow, the directions I've provided, you should be ready for the R Markdown workshop.
 
-```{r cars}
-summary(cars)
-```
+Good luck and reach out if you need anything!
 
-## Including Plots
+-Matt
 
-You can also embed plots, for example:
+***
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+## [<span class="fa fa-apple fa-fw fa-md"></span> Instructions for Mac Users](mac.html)
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## [<span class="fa fa-windows fa-fw fa-md"></span> Instructions for Windows Users](windows.html)
+
+## [<span class="fa fa-desktop fa-fw fa-md"></span> Instructions for Other Platforms](others.html)
+
