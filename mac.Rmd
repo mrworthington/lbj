@@ -23,15 +23,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
   * [Download link for XQuartz](https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg)
 
-## Step 4: Install `rmarkdown` & `tinytex` 
+## Step 4: Install `rmarkdown` & `tinytex` {.tabset}
 
-After you've Steps 1-4, follow these steps:
+### Instructions
+
+After you've Steps 1-3, follow these steps:
 
 * Open RStudio from you applications folder.
 * Then, copy & paste this code into the console: ```install.packages("devtools")```
 * Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
 tinytex::install_tinytex()```
   - If the console prompts you to install dependencies, type "y" and hit enter.
+
+### Console Example
 
 ![Image: Once you paste the code, you should hit enter.](images/console.png)
 

@@ -15,7 +15,9 @@ output:
 
   * [Download link For Windows Vista/7/8/10](https://download1.rstudio.org/RStudio-1.1.423.exe)
 
-## Step 3: Install `rmarkdown` & `tinytex` 
+## Step 3: Install `rmarkdown` & `tinytex` {.tabset}
+
+### Instructions
 
 After you've Steps 1-3, follow these steps:
 
@@ -24,5 +26,7 @@ After you've Steps 1-3, follow these steps:
 * Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
 tinytex::install_tinytex()```
   - If the console prompts you to install dependencies, type "y" and hit enter.
+
+### Console Example
 
 ![Image: Once you paste the code, you should hit enter.](images/console.png)

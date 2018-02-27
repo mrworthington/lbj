@@ -24,6 +24,10 @@ navbar:
       href: https://github.com/mrworthington
 output:
   html_document:
+    fig_width: 6
+    fig_height: 4
+    fig_retina: 2
+    fig_caption: true
     self_contained: false
     theme: cosmo
     highlight: textmate

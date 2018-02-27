@@ -8,6 +8,11 @@ color: #ffffff;
 background-color: #bf5700;
 }
 
+.nav-tabs {
+border-bottom: 1px solid #dddddd;
+margin-top: 30px;
+}
+
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 color: #ffffff;
 background-color: #bf5700;
@@ -23,6 +28,10 @@ z-index: 2;
 color: #ffffff;
 background-color: #333f48;
 border-color: #dddddd;
+}
+
+.navbar-brand {
+font-weight: 700;
 }
 
 h1.title {

@@ -3,6 +3,9 @@ title: "For Other Platforms"
 output: 
   html_document: 
     toc: yes
+    toc_float:
+      collapsed: false
+      smooth_scroll: true
 ---
 **Note:** Clicking the links below will take you directly to a page filled with download options, where you can determine the best option for your operating system. As much as I wish I could provide direct links, I don't know your specific needs. That said, reach out if you have any questions and I'll try to help as much as I can.
 
@@ -14,12 +17,18 @@ output:
 
   * [Download link For Other Platforms](https://www.rstudio.com/products/rstudio/download/#download)
 
-## Step 3: Install `rmarkdown` & `tinytex` 
+## Step 3: Install `rmarkdown` & `tinytex` {.tabset}
+
+### Instructions
+
+After you've Steps 1-3, follow these steps:
 
 * Open RStudio from you applications folder.
 * Then, copy & paste this code into the console: ```install.packages("devtools")```
 * Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
 tinytex::install_tinytex()```
   - If the console prompts you to install dependencies, type "y" and hit enter.
+
+### Console Example
 
 ![Image: Once you paste the code, you should hit enter.](images/console.png)
