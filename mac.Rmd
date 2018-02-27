@@ -7,20 +7,20 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-### Step 1: Download R, Version 3.4.3
+## Step 1: Download R, Version 3.4.3
 
 **Note:** When you click the link below, you'll be taken to a website
 
   * [Download link For Mac OS X](https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg)
 
-### Step 2: Download RStudio, Version 1.1.423
+## Step 2: Download RStudio, Version 1.1.423
 
   * [Download link For Mac OS X 10.6+](https://download1.rstudio.org/RStudio-1.1.423.dmg)
 
-### Step 3: Install XQuartz
+## Step 3: Install XQuartz
 
   * [Download link for XQuartz](https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg)
 
-### Step 3: Install the `rmarkdown` & `tinytex` Package
+## Step 3: Install the `rmarkdown` & `tinytex` Package
 
 After you've doneTo do that, copy the following code

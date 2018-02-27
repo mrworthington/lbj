@@ -1,11 +1,12 @@
 ---
-title: "Home"
+title: "Getting Started"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
 
 Hey Everyone,
 

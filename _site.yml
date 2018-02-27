@@ -4,20 +4,20 @@ navbar:
   title: "R Markdown @ LBJ"
   left:
     - text: "Home"
-      icon: fa-home
+    # icon: fa-home
       href: index.html
     - text: "Mac Users"
-      icon: fa-apple
+    # icon: fa-apple
       href: mac.html
     - text: "Windows Users"
-      icon: fa-windows
+    # icon: fa-windows
       href: windows.html
     - text: "Others"
-      icon: fa-home
+    # icon: fa-home
       href: others.html
 output:
   html_document:
-    theme: null
+    theme: paper
     include:
       in_header: header.html
-    css: [css/styles.css, css/normalize.css]
+    css: css/style.css
