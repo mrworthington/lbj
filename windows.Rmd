@@ -23,9 +23,15 @@ output:
 After you've Steps 1-3, follow these steps:
 
 * Open RStudio from you applications folder.
-* Then, copy & paste this code into the console: ```install.packages("devtools")```
-* Next, copy and paste this code into the console: ```devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown'))
-tinytex::install_tinytex()```
+* Then, copy & paste this code into the console: 
+```r
+install.packages("devtools")
+```
+* Next, copy and paste this code into the console: 
+```r
+devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown')) +
+tinytex::install_tinytex()
+```
   - If the console prompts you to install dependencies, type "y" and hit enter.
 
 ### Console Example
