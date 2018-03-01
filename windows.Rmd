@@ -8,31 +8,42 @@ output:
 
 **Note:** Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
 
-## Step 1: Download R
+## Step 1: Download & Install R
 
   * [Download link For Windows](https://cran.rstudio.com/bin/windows/base/R-3.4.3-win.exe)
   
-## Step 2: Download RStudio
+## Step 2: Download & Install RStudio
 
   * [Download link For Windows Vista/7/8/10](https://download1.rstudio.org/RStudio-1.1.423.exe)
 
-## Step 3: Install `rmarkdown` & `tinytex` {.tabset}
+## Step 3: Download & Install Latex for Windows (MikTex) {.tabset}
+
+  * [Download link for MikTex](https://miktex.org/download/ctan/systems/win32/miktex/setup/windows-x64/basic-miktex-2.9.6615-x64.exe)
 
 ### Instructions
 
-After you've Steps 1-3, follow these steps:
+  * After downloading, run the MiKTeX installer by opening the download package. 
+  * When prompted, choose to install missing packages automatically.
+  * At this point you are done!
 
-* Open RStudio from you applications folder.
+### Screenshot 1
+
+![Image: After downloading, run the MiKTeX installer by opening the download package](images/windows1.png)
+
+### Screenshot 2
+
+![Image: When prompted, choose to install missing packages automatically.](images/windows2.png)
+
+## Step 4: Install `rmarkdown` with RStudio {.tabset}
+
+### Instructions 
+
+* Open RStudio from your applications folder.
 * Then, copy & paste this code into the console: 
 ```r
-install.packages("devtools")
+install.packages("rmarkdown")
 ```
-* Next, copy and paste this code into the console: 
-```r
-devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown')) +
-tinytex::install_tinytex()
-```
-  - If the console prompts you to install dependencies, type "y" and hit enter.
+* If the console prompts you to install dependencies, type "y" and hit enter.
 
 ### Console Example
 

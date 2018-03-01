@@ -10,11 +10,11 @@ output:
 ---
 **Note:** Clicking the links below will take you directly to a page filled with download options, where you can determine the best option for your operating system. As much as I wish I could provide direct links, I don't know your specific needs. That said, reach out if you have any questions and I'll try to help as much as I can.
 
-## Step 1: Download R
+## Step 1: Download & Install R
 
   * [Download link For Other Platforms](https://cran.rstudio.com)
 
-## Step 2: Download RStudio
+## Step 2: Download & Install RStudio
 
   * [Download link For Other Platforms](https://www.rstudio.com/products/rstudio/download/#download)
 
@@ -35,7 +35,12 @@ devtools::install_github(c('yihui/tinytex', 'rstudio/rmarkdown')) +
 tinytex::install_tinytex()
 ```
   - If the console prompts you to install dependencies, type "y" and hit enter.
+  
+### Troubleshooting
+
+If you are having trouble installing tinytex on other platforms, please consult [the `tinytex` developer's website](https://yihui.name/tinytex/faq/) for information on your platform.
 
 ### Console Example
 
 ![Image: Once you paste the code, you should hit enter.](images/console.png)
+
