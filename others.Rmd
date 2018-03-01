@@ -38,7 +38,7 @@ tinytex::install_tinytex()
   
 ### Troubleshooting
 
-If you are having trouble installing tinytex on other platforms, please consult [the `tinytex` developer's website](https://yihui.name/tinytex/faq/) for information on your platform.
+If you are having trouble installing `tinytex` on other platforms, please consult [the `tinytex` developer's website](https://yihui.name/tinytex/faq/) for information on your platform.
 
 ### Console Example
 
