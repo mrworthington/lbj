@@ -1,0 +1,281 @@
+
+/* Commenting Out Text */
+
+.remark-code-line {
+  min-height: 1em;
+  background-color: #e6e6e6;
+}
+
+.remark-code {
+  min-height: 1em;
+  background: #e6e6e6 !important;
+}
+
+.vega {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.remark-inline-code {
+  background-color: #e6e6e6; /* lighter
+  /* background: #e7e8e2; /* darker */ */
+  border-radius: 3px;
+  background: #e6e6e6;
+  padding: 4px;
+}
+
+.remark-slide-content {
+  background-color: #fafafa;
+  border-top: 80px solid #333f48;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  padding: 1em 2em 1em 2em
+}
+
+a, a > code {
+  color: #005f86;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.title-slide .inverse .remark-slide-content {
+  background-color: #fafafa;
+}
+
+.inverse {
+  background-color: #333f48;
+  text-shadow: none;
+}
+
+.image-slide {
+  border-top: 0px solid #ffffff !important;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.7);
+}
+
+.dark-header > h1 {
+  font-weight: 700;
+  font-size: 45px;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #333f48 !important;
+}
+
+.remark-slide-content > h1 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: -95px;
+  margin-left: -00px;
+  color: #fafafa;
+}
+
+.vega {
+  position: relative;
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.remark-slide-content > inverse {
+  width: 112px;
+  height: 47px;
+  border-bottom: 1px solid black;
+  position: absolute;
+}
+
+.remark-slide-content > h2 {
+  padding-top: -15px;
+  padding-bottom: 00px;
+  color: #1A292C;
+  text-shadow: none;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: left;
+  margin-left: 00px;
+}
+
+.remark-slide-content > h3 {
+  padding-top: -15px;
+  padding-bottom: 10px;
+  color: #1A292C;
+  text-shadow: none;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: left;
+  margin-left: 00px;
+}
+
+.title-slide {
+  background-color: #FAFAFA;
+  background-image: url(https://lbj.utexas.edu/sites/all/themes/lbj/images/logo.svg);
+  background-position: 6% 0%;
+	background-size: 25%;
+  border-top: 80px solid #FAFAFA;
+}
+
+.title-slide > h1  {
+  color: #333f48;
+  font-size: 40px;
+  text-shadow: none;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 15px;
+  padding-top: 80px;
+}
+.title-slide > h2  {
+  margin-top: -25px;
+  padding-bottom: -20px;
+  color: #333f48;
+  text-shadow: none;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: left;
+  margin-left: 15px;
+}
+.title-slide > h3  {
+  /* font-family: 'IBM Plex Serif'; */
+  color: #666e75;
+  text-shadow: none;
+  font-weight: 500;
+  /* text-transform: uppercase; */
+  font-size: 25px;
+  text-align: left;
+  margin-left: 15px;
+  margin-bottom: -30px;
+}
+
+.remark-slide-number {
+  font-size: 13pt;
+  font-family: 'IBM Plex Sans';
+  color: #272822;
+  opacity: 1;
+}
+.inverse .remark-slide-number {
+  font-size: 13pt;
+  font-family: 'IBM Plex Sans';
+  color: #FAFAFA;
+  opacity: 1;
+}
+
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.code10 .remark-code {
+  font-size: 10%;
+}
+
+.code20 .remark-code {
+  font-size: 20%;
+}
+
+.code30 .remark-code {
+  font-size: 30%;
+}
+
+.code40 .remark-code {
+  font-size: 40%;
+}
+
+.code50 .remark-code {
+  font-size: 50%;
+}
+
+.code60 .remark-code {
+  font-size: 60%;
+}
+
+.code70 .remark-code {
+  font-size: 70%;
+}
+
+.code80 .remark-code {
+  font-size: 80%;
+}
+
+.code90 .remark-code {
+  font-size: 90%;
+}
+
+.code100 .remark-code {
+  font-size: 100%;
+}
+
+.font10 {
+  font-size: 10%;
+}
+
+.font20 {
+  font-size: 20%;
+}
+
+.font30 {
+  font-size: 30%;
+}
+
+.font40 {
+  font-size: 40%;
+}
+
+.font50 {
+  font-size: 50%;
+}
+
+.font60 {
+  font-size: 60%;
+}
+
+.font70 {
+  font-size: 70%;
+}
+
+.font80 {
+  font-size: 80%;
+}
+
+.font90 {
+  font-size: 90%;
+}
+
+.font100 {
+  font-size: 100%;
+}
+
+.font110 {
+  font-size: 110%;
+}
+
+.font120 {
+  font-size: 120%;
+}
+
+.font130 {
+  font-size: 130%;
+}
+
+.font140 {
+  font-size: 140%;
+}
+
+.font150 {
+  font-size: 150%;
+}
+
+.font160 {
+  font-size: 160%;
+}
+.font170 {
+  font-size: 170%;
+}
+.font180 {
+  font-size: 180%;
+}
+.font190 {
+  font-size: 190%;
+}
+.font200 {
+  font-size: 200%;
+}
