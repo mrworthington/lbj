@@ -21,6 +21,36 @@ navbar:
       - text: "Video Tutorials"
         icon: fa-play-circle fa-fw fa-lg
         href: tutorials.html
+    - text: "Workshop Resources"
+      menu:
+      - text: "Mac Users"
+        icon: fa-apple fa-fw fa-lg
+        href: mac.html
+      - text: "Windows Users"
+        icon: fa-windows fa-fw fa-lg
+        href: windows.html
+      - text: "Other Users"
+        icon: fa-desktop fa-fw fa-lg
+        href: others.html
+      - text: "---------"
+      - text: "Video Tutorials"
+        icon: fa-play-circle fa-fw fa-lg
+        href: tutorials.html
+    - text: "Post-Workshop Resources"
+      menu:
+      - text: "Mac Users"
+        icon: fa-apple fa-fw fa-lg
+        href: mac.html
+      - text: "Windows Users"
+        icon: fa-windows fa-fw fa-lg
+        href: windows.html
+      - text: "Other Users"
+        icon: fa-desktop fa-fw fa-lg
+        href: others.html
+      - text: "---------"
+      - text: "Lynda.com"
+        icon: fa-play-circle fa-fw fa-lg
+        href: tutorials.html
   right:
     - text: "Get Help"
       href: mailto:worthington.matthew@utexas.edu?Subject=Help%20with%20pre-workshop%20actions

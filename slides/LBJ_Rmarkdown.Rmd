@@ -1,0 +1,471 @@
+---
+title: "Work Smarter, Not Harder"
+subtitle: "An Intro To R Markdown  <html><div></div><hr style='margin-left: 16px' align='left' color='#bf5700' size=1.5px width=50%></html>"
+author:
+- "<a href='https://github.com/mrworthington' style='color:#fafafa; font-weight:400'><i class='ion-fab  ion-social-github ion-fw'></i> Matthew R. Worthington, M.Ed.</a> "
+- "<a href='http://mrworthington.github.io/lbj/' style='color:#fafafa; font-weight:400'><i class='ion ion-ios-albums ion-fw'></i> Resources</a>"
+date: "<a href='http://ionicons.com' style='color:#fafafa; font-weight:400'><i class='ion-fab  ion-ios-calendar ion-fw'></i>  March 9, 2018</a> "
+# author: 
+# - "Matthew R. Worthington, M.Ed."
+# - "Slides"
+# date: "March 9, 2018"
+output:
+  xaringan::moon_reader:
+    css: ["default", "metrobenton.css", "footer-header.css", "fonts/benton-plex.css"]
+    lib_dir: libs
+    yolo: false
+    nature:
+      highlightStyle: github-gist
+      highlightLines: true
+      beforeInit: "https://platform.twitter.com/widgets.js"
+      countIncrementalSlides: false
+      ratio: "16:9"
+      scroll: false
+      touch: false
+---
+
+```{r setup, include=FALSE, echo=FALSE, message=FALSE, warning=FALSE}
+options(htmltools.dir.version = FALSE, cache=TRUE)
+knitr::opts_chunk$set(
+	fig.ext = ".svg",
+	dev = "svglite",
+	include = FALSE
+)
+library(tidyverse)
+library(ggplot2)
+library(showtext)
+library(icon)
+library(woRthington)
+library(sysfonts)
+font_add(family = "IBM Plex Sans", regular = "IBMPlexSans-Regular.otf", bold = "IBMPlexSans-Bold.otf", italic = "IBMPlexSans-Italic.otf")
+icon::ii()
+```
+
+---
+<style>.green{color: green;}</style>
+
+# Do Now: Inefficient Work
+
+## Prompt:
+* As you come in, grab coffee, some pastries, and find a partner. When you find one, each take no more than three minutes to share an example of a time where you or someone you knew had to accomplish a herculean task *<u>and</u>* you/they:
+
+	* <u>Had the wrong tools</u>, which made accomplishing that task completely inefficient, arduous, and more painful than you could have ever imagined. And, to this day, you sometimes have night terrors about that experience.
+	
+	* <u>Had the right tools</u> to do that work, which made the work efficient, reasonable, and less burdensome—maybe even enjoyable—than it could have without those tools. 
+	
+???
+#Shareout Activity
+
+Ask A Few Folks To Share Their Partner’s Story
+
+---
+
+# My Example of Working Efficiently
+
+.pull-left[
+
+## Champ's Meltdown
+
+1. Had A Vet Visit
+
+2. We Left Town
+
+    * He stayed with sitter
+
+3. Combined Stress made him sick
+
+    * Resulted in a mess I had to clean-up
+
+4. So, I chose between.... 
+
+  ]
+  
+.pull-right.center.contain[
+
+![](images/champ.jpg)
+  ]
+  
+???
+#My Story: 
+After everyone shares their example, share my example of cleaning up after champ—my dog—when he got sick recently and destroyed our house with explosive diarrhea.
+
+---
+class: 
+background-image: url(images/poop.jpg)
+background-size: contain
+
+# My Task
+
+<div class="my-footer"><span><a href="https://www.facebook.com/jesse.newton.37/posts/776177951574">Image Credit: Jesse Newton 2016</a>    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+class: graphic
+# My Choices For Cleanup
+
+.pull-left[
+
+## Bissel Spot Cleaner
+
+![](images/spotbot.jpg)
+
+  ]
+  
+.pull-right[
+
+## Rug Doctor Pro
+
+![](images/rugdoctor.jpg)
+]
+
+---
+
+# Comparing The Tools
+
+.pull-left[
+
+## Bissel Spot Cleaner
+
+**Pros**
+1. Already owned it
+2. Push-button convenience
+
+**Cons**
+1. Meant for small accidents
+2. Inefficient for disasters
+
+  ]
+  
+.pull-right[
+
+## Rug Doctor Pro
+
+**Pros**
+1. Efficient for disasters
+
+**Cons**
+1. Had to rent it. .green[`r fa('money', size=1.5, animate='still')`]
+
+  ]
+---
+class: center, middle, inverse
+
+~~~~# Welcome
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+# By the end of today, you will:
+<ul class="fa-ul">
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-check-square"></i>Have R Studio installed, along with the <code>rmarkdown</code> & <code>tinytex</code> packages so you can develop R Markdown projects that knit to PDF, HTML, or Microsoft Word docs.</li>
+
+--
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Know the benefits of using R Markdown compared to traditional productivity tools like Microsoft Office & Google Apps.</li>
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Have a general workflow for managing assignments, essays, or other kinds of work with R Studio projects, where R Markdown documents live.</li> 
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Know the general layout of an R Markdown document, which is composed of three distinct types of text: YAML Headers, Markdown, and Code Chunks.</li> 
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Successfully knit to a PDF document using R Markdown.</li>
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Have a cursory knowledge of how Latex & R Packages enhance what you can do with R Markdown.</li>
+
+--
+
+<li style="margin-bottom: 10px;"><i class="fa-li fa fa-square"></i>Have provided  resources for further learning & templates that are relevant to work we do here at LBJ.</li>
+
+</ul>
+
+---
+
+# Norms For Today
+
+--
+
+## **Reject Intimidation**
+
+- Jump in and break stuff
+
+--
+
+## **Embrace Failure**
+
+- Read and Google error codes
+- Ask questions or write them down for later
+
+--
+
+## **Learn New Skills**
+
+- Repeat Process
+
+---
+class: center, middle, inverse
+
+# Section: Have R Studio installed, along with the <code>rmarkdown</code> & <code>tinytex</code> packages so you can develop R Markdown projects that knit to PDF, HTML, or Microsoft Word docs.
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+
+---
+class: center, middle, inverse
+
+# What Can R Markdown Do?
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+background-image: url(images/chart1.svg)
+background-size: contain
+
+# Create Amazing Charts
+
+<div class="my-footer"><span>Packages used: ggplot2, ggalt, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/ggplot1.png)
+background-size: contain
+
+# Create Amazing Charts
+
+<div class="my-footer"><span>Packages used: ggplot2, sysfonts, showtext     
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/geofacet1.png)
+background-size: contain
+
+# Create Amazing Charts
+
+<div class="my-footer"><span>Packages used: ggplot2, geofacet, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/geofacet2.png)
+background-size: contain
+
+# Create Amazing Charts
+
+<div class="my-footer"><span>Packages used: ggplot2, geofacet, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/usmap1.png)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, viridis, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/map1.svg)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, svglite, cowplot, viridis, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/tidycensus1.png)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, viridis, sysfonts, showtext   
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/tidycensus2.png)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, viridis, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/tidycensus3.png)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, viridis, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+
+---
+background-image: url(images/dotdensity1.png)
+background-size: contain
+
+# GIS Analysis & Visualization
+
+<div class="my-footer"><span>Packages used: ggplot2, tidycensus, sf, viridis, sysfonts, showtext    
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+</span></div> 
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+
+---
+class: center, middle, inverse
+
+# Section
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+
+---
+class: center, middle, inverse
+
+# Section
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+
+---
+class: center, middle, inverse
+
+# Section
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+
+---
+class: center, middle, inverse
+
+# Section
+
+<html><div style='float:left'></div><hr color='#bf5700' size=1px width=1100px></html>
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+## Slide
+
+* Goal 1: redress past patterns of discrimination
+
+* Goal 2: make the bureaucracy more representative of the overall population
+
+---
+
+# Questions
+
+**1.** Does the government's current diversity inclusion intiative--which provides preferential treatment in hiring decisions--do enough to reverse past patterns of discrimination among civil service employees, considering the vast amount of wages that were lost because of the government's past action. 
+
+**2.** What obligation, if any, should the government have to promote equity in scenarios where civil service employees---who spent their whole careers in civil service---were routinely turned down for jobs they were qualified for at disportionately high rates, leaving them with substantial lack of wealth?
+
+**3.** What are other ways the government could improve its effectiveness of achieving it's two social goals: redressing past patterns of discrimination and making the government more representative of the people it serves?
+
+---
+

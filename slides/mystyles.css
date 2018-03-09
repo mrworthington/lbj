@@ -1,0 +1,55 @@
+
+/* Adjust Inline-Code Box */
+
+.remark-code-line {
+  min-height: 1em;
+  border-radius: 3px;
+  padding: 4px;
+  background-color: #f8f8f8;
+}
+
+/* Adjust Inline-Code Highlighting */
+
+a, a > code {
+  color: #FF1B70; /*default: rgb(249, 38, 114); || sets color of links */
+  text-decoration: none; /* turns off background coloring of links */
+}
+
+/* Adjust Slide Margins */
+
+/* .remark-slide-content {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; */
+}
+
+/* Adjust Slide Margins of First Header 1 on Page */
+
+.remark-slide-content > h1:first-of-type {
+  margin-top: 0px;
+}
+
+/* Adjust Slide Margins of First Header 1 on Page */
+
+.remark-slide-content > h1:first-of-type {
+  margin-top: 0px;
+}
+
+.objectives1 > li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.objectives2 > li:before {
+  content: "\f00c"; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em; /* same as padding-left set on li */
+}
+
+.remark-code, .remark-inline-code { font-family: 'IBM Plex Mono', 'Lucida Console', Monaco, monospace; }
