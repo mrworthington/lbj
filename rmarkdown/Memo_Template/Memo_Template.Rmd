@@ -16,9 +16,6 @@ output:
 urlcolor: blue
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 <!---Note. This memo template is not intended to work with a Table of Contents. Do Not try to include a table of contents in this template.--->
 <!---THE MEMO HEADER. Edit Only The Text Next to \item--->
 
