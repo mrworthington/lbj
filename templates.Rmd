@@ -1,0 +1,220 @@
+---
+title: "For Mac OS X Users"
+subtitle: Pre-Workshop Actions
+output:
+  html_document:
+    toc: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I've done this to help ease any confusion about which items to download.
+
+## Policy Memo Template {.tabset}
+
+  * [Download The Policy Memo Template](https://github.com/mrworthington/lbj/raw/master/rmarkdown/memo.zip)
+  
+### The PDF Output
+
+<iframe src="https://mrworthington.github.io/lbj/rmarkdown/Memo_Template/Memo_Template.pdf" class="gde-frame" style="height:500px; width: 100%; border: none;" scrolling="yes"></iframe>
+
+### The R Markdown Code
+
+```
+---
+documentclass: article
+fontsize: 10pt # Options Include 10pt, 11pt, or 12pt
+header-includes:
+- \usepackage{crimson}
+- \usepackage[T1]{fontenc}
+- \usepackage[margin=1in]{geometry}
+- \renewcommand{\baselinestretch}{1}
+- \usepackage{calc}
+- \usepackage{enumitem}
+- \usepackage{changepage}
+output:
+  pdf_document:
+    number_sections: no # Yes if you wanted numbered sections
+  word_document: default
+urlcolor: blue
+---
+
+<!---Note. This memo template is not intended to work with a Table of Contents. Do Not try to include a table of contents in this template.--->
+<!---THE MEMO HEADER. Edit Only The Text Next to \item--->
+
+\vspace{-85pt}
+\text{\bfseries\LARGE{MEMORANDUM}}
+\newline
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-9pt}
+\setlist[2]{noitemsep}
+\begin{description}[leftmargin=!,itemsep=-1ex,labelwidth=\widthof{Subject:  }]
+  \item[To:] Your Memo Recipient, Their Title 
+  \item[From:] Your Name, Your Title 
+  \item[Date:] March 7, 2018 
+  \item[Subject:] \bfseries{A Really Compelling, Yet Boring Memo Subject Title}
+\end{description}
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-25pt}
+
+<!---THE MEMO BODY. EDITS ALL PLAIN TEXT--->
+
+## BACKGROUND
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+
+Dillon Ipsum Julie Taylor, will you marry me? **Clear Eyes. Full Hearts.** Saracen, quarterback's a captain. CHAMPIONS DON'T COMPLAIN![^1] Why don't you take your Members Only jacket off and hang it on the coat rack? Blood, sweat and tears - it all stays right here on this field, right now![^2] This is our dirt! This is our mud! This is ours, baby! Everybody leaves me! What's wrong with me? No matter what happens, no matter where you go, no matter what you do, I'm gonna be right behind you. Always and always and always. There's a lot of dude talking going on out here. It's time for you to let Tim Riggins come home. You're gonna be the star quarterback of the DIllon Panthers next year. And you are gonna shine. 
+
+Sed ut Clear Eyes, Full Hearts...ehh we'll deal with that later. I turned the contract down. It's your turn, I wanna go to Philadelphia. Will you take me to Philadelphia please? You changed my life Coach. Maybe one day our dreams will merge together.[^3] To Mr. and Mrs. Saracen, cheers! I know that you guys think that I'm young and that I'm making the wrong decision and I'm gonna drop out of college or whatever, but that's not me and you guys should know that. It's about getting to spend the rest of my life with my best friend. I want you to be on my side and trust me that I'm making the right decision.I would not talk about your job at the art gallery, that's not reassuring for a football coach. 
+
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+## THE NEED FOR LEADERSHIP
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+At veto and remember you gotta win Friday night to make the playoffs. I guess we're fixin' to find out. Lemme tell you something. I'll tell you what. Tonight is your night. You have an opportunity to go out there and accept the challenge. You have the opportunity to be a part of the team. If anybody's internal, I'm internal. I'm not here to make friends. This ain't my home. This ain't my school. It never will be. Moby Dick is actually the perfect metaphor for this town. You need to learn this offense, son. If you look at a girl like a geometry proof the answer is right in front of you.[^4] It's your job to find the missing variable. You gotta solve for x. Yeah, um, that's actually algebra. That's actually not the point. Do you understand? My truck ain't running. I don't hate you, Lyla. It'd be a lot easier if I did. All right, listen up. You're a lousy ping-pong player. He's all bard and no bite. Oh, hell. Take a knee. Alright, y'all. Today we're champions. Feels good, right? Enjoy it while it lasts, 'cause tomorrow we're targets.
+
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+## RECOMMENDATION
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+Dillon Ipsum _I'll tell you something else and don't you ever forget this._ I'm starting to feel like I have some sort of repellent that repels females away and sends them running. I don't want to step on your fingers or anything but you might want to slice those a little thinner because cucumber sandwiches are pretty delicate. Did I just lose a lot of man points for that? Crucifictorious. You can't fake boosterism, Eric, it comes from the heart.[5] That's the beauty of it. Yeah, when we drive on the football field...we usually don't drive on our football field. Lyla, your dad's a sinner, I'm a weak man, but it was one mistake. He's one of those "I'll tell you something" guys, isn't he? Hey look, y'all keep tryin', but you ain't gonna catch me. Hey, don't hate, accelerate! Now, for as long as I know Tim Riggins, there's only two phrases that can put a smile on his face. Number 1: We're going to State. And Number 2: The results are in - you are not the father. **Texas forever.**
+
+<!---BELOW ARE YOUR MEMO CITATIONS. ---> 
+<!---Note: Ensure the number of citations below matches the citation marks included above. --->
+
+[^1]: This is a footnote. You can copy references here and match them to the marks inserts in the plaintext above.
+
+[^2]: NAEP Report Cards - Home. (n.d.). Retrieved March 7, 2018, from https://www.nationsreportcard.gov/#
+
+[^3]: Or maybe they won't? 
+
+[^4]: Religions by Tradition(TR), Religion 2010 (InfoGroup). (n.d.). Social Explorer. Retrieved March 7, 2018, from https://www.socialexplorer.com/tables/Religion_InfoUSA10/R11617373. 
+
+[^5]: Among 15- to 24-year-olds enrolled in grades 10 through 12, percentage who dropped out (event dropout rate), by sex and race/ethnicity: 1972 through 2016. (n.d.). Retrieved March 7, 2018, from https://nces.ed.gov/programs/digest/d17/tables/dt17_219.55.asp?current=yes
+```
+
+## Native R Markdown Templates {.tabset}
+
+These are templates packages that can be installed using the **Packages** tab in your R Studio console or by installing using the `devtools` package through your console. Descriptions are taken from each packages `README.md` file on their github pages. I take no credit for the text, but have copied it here for convenience purposes. 
+
+### `papaja` (APA Papers)
+
+  * [Github Page for `papaja`](https://github.com/crsh/papaja/)
+
+[`papaja`](https://github.com/crsh/papaja/) is a R-package in the making including a [R Markdown](http://rmarkdown.rstudio.com/) template that can be used with (or without) [RStudio](http://www.rstudio.com/) to produce documents, which conform to the American Psychological Association (APA) manuscript guidelines (6th Edition). The package uses the LaTeX document class [apa6](http://www.ctan.org/pkg/apa6) and a .docx-reference file, so you can create PDF documents, or Word documents if you have to. Moreover, `papaja` supplies R-functions that facilitate reporting results of your analyses in accordance with APA guidelines.
+
+**Note, at this point `papaja` is in active development and should be considered alpha. If you experience any problems, please [open an issue](https://github.com/crsh/papaja/issues) on Github.**
+
+#### Examples
+
+Take a look at the [.Rmd](https://github.com/crsh/papaja/blob/master/example/example.Rmd) of the example manuscript in the folder `example` and the resulting [.pdf](https://raw.githubusercontent.com/crsh/papaja/master/example/example.pdf). The example document also contains some basic instructions.
+
+#### Installation Requirements
+
+To use `papaja` you need to make sure the following software is installed on your computer:
+
+-   [R](http://www.r-project.org/) (2.11.1 or later)
+-   [RStudio](http://www.rstudio.com/) (0.98.932 or later) is optional; if you don't use RStudio, you need to install [pandoc](http://johnmacfarlane.net/pandoc/) using the [instructions for your operating system](https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md)
+-   A [TeX](http://de.wikipedia.org/wiki/TeX) distribution (2013 or later; e.g., [MikTeX](http://miktex.org/) for Windows, [MacTeX](https://tug.org/mactex/) for Mac, obviously, or [TeX Live](http://www.tug.org/texlive/) for Linux).
+    -   **Windows** users should use MikTex if possible. Currently, pandoc and the Windows version of Tex Live [don't seem to like each other](https://github.com/rstudio/rmarkdown/issues/6). Make sure you install the *complete*---not the basic---version.
+    -   **Ubuntu 14.04** users need a few additional TeX packages for the document class `apa6` to work:
+
+```r
+sudo apt-get install texlive texlive-publishers texlive-fonts-extra texlive-latex-extra texlive-humanities lmodern
+```
+
+#### Install papaja
+
+Once all of the requirements are taken care of, install `papaja` from GitHub:
+
+```r
+devtools::install_github("crsh/papaja")
+```
+
+#### How to use papaja
+
+Once `papaja` is installed, you can select the APA template when creating a new Markdown file through the RStudio menus.
+
+![APA template selection](inst/images/template_selection.png)
+
+If you want to add citations specify your BibTeX-file in the YAML front matter of the document (`bibliography: my.bib`) and you can start citing. If necessary, have a look at R Markdown's [overview of the citation syntax](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html). You may also be interested in [citr](github.com/crsh/citr), an R Studio addin to swiftly insert Markdown citations.
+
+### `xaringan` (Presentations)
+
+  * [Github Page for `xaringan`](https://github.com/yihui/xaringan/) 
+
+[ʃæ.'riŋ.ɡæn]
+ 
+[![Build Status](https://travis-ci.org/yihui/xaringan.svg)](https://travis-ci.org/yihui/xaringan)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg" align="right" alt="Sharingan" width="100" />
+
+An R package for creating slideshows with [remark.js](http://remarkjs.com) through R Markdown. The package name **xaringan** comes from [Sharingan](http://naruto.wikia.com/wiki/Sharingan), a dōjutsu in Naruto with two abilities: the "Eye of Insight" and the "Eye of Hypnotism". A presentation ninja should have these basic abilities, and I think remark.js may help you acquire these abilities, even if you are not a member of the Uchiha clan.
+
+Please see the full documentation as a [presentation here](http://slides.yihui.name/xaringan/) ([中文版在此](http://slides.yihui.name/xaringan/zh-CN.html)). You can use **devtools** to install the package:
+
+#### Installation & Usage
+
+```r
+devtools::install_github('yihui/xaringan')
+```
+
+If you use RStudio, it is easy to get started from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`, and you will see an R Markdown example. Press the `Knit` button to compile it, or use the RStudio Addin `Infinite Moon Reader` to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded; make sure the Rmd document is on focus when you click the addin). Please see the [issue #2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
+
+The main R Markdown output format in this package is `moon_reader()`. See the R help page `?xaringan::moon_reader` for all possible configurations.
+
+#### Slide formatting
+
+The [remark.js Wiki](https://github.com/gnab/remark/wiki) contains detailed documentation about how to format slides and use the presentation (keyboard shortcuts). The **xaringan** package has simplified several things compared to the official remark.js guide, e.g. you don't need a boilerplate HTML file, you can set the autoplay mode via an option of `moon_reader()`, and LaTeX math basically just works (TM). Please note that remark.js does not support Pandoc's Markdown, so you will not be able to use any fancy Pandoc features, but that is probably fine for presentations. BTW, you can use raw HTML when you feel there is something you desparately want but cannot get from the basic Markdown syntax (e.g. `knitr::kable(head(iris), 'html')`).
+
+As the package title indicates, this package is designed for ninja. If you are a beginner of HTML/CSS, you may have to stick with the default CSS (which is not bad). The more you know about CSS, the more you can achieve with this package. The sky is your limit.
+
+We have a [wiki](https://github.com/yihui/xaringan/wiki) that might help you to use CSS to alter the appeareance of your presentation. 
+Make sure to check it out before opening an issue. 
+You might also consider posting simple usage questions on [stackoverflow](https://stackoverflow.com/questions/tagged/xaringan) using the `#xaringan`tag.
+We will read all questions with the `#xaringan` tag so please be patient if we don't answer within a day :smile:
+
+Do not forget to try [the option `yolo: true`](https://github.com/yihui/xaringan/issues/1) under `xaringan::moon_reader` in the YAML metadata of your R Markdown document. Big thanks to [Karl Broman](http://slides.yihui.name/xaringan/karl.html)!
+
+### Other R Markdown Formats
+
+R Markdown can produce all kinds of documents. [The comprehensive list of formats that can be produced by R Markdown can be found here](https://rmarkdown.rstudio.com/formats.html). Below are a few popular packages that are used around the interwebs, with a couple of links to learn more about them. 
+
+#### [`blogdown`](https://bookdown.org/yihui/blogdown/) for Making A Blog or Website
+
+  * **Installation:** `install.packages("blogdown")`
+  * **Tutorials**
+    - [Up and running with blogdown](https://alison.rbind.io/post/up-and-running-with-blogdown/) by Alison Hill
+    - [The Blogdown Tutorial Blog](https://blogdown-demo.rbind.io)
+    
+#### [`flexdashoard`](https://rmarkdown.rstudio.com/flexdashboard/index.html) for Making A Blog or Website
+
+  * **Installation:** `install.packages("flexdashboard")`
+  * **Tutorials**
+    - [Basic Usage of `flexdashboard`](https://rmarkdown.rstudio.com/flexdashboard/using.html)
+    - [Layouts in `flexdashboard`](https://rmarkdown.rstudio.com/flexdashboard/layouts.html)
+    - [Examples of `flexdashboard`](https://rmarkdown.rstudio.com/flexdashboard/examples.html)
+    
+#### [`rticles`](https://github.com/rstudio/rticles) for producing journal PDFs
+
+  * **Installation:** `install.packages("rticles", type = "source")`
+
+##### Using rticles from RStudio
+
+To use **rticles** from RStudio:
+
+1) Install the latest [RStudio](http://www.rstudio.com/products/rstudio/download/).
+
+2) Install the **rticles** package: 
+    
+    install.packages("rticles", type = "source")
+    
+3) Use the **New R Markdown** dialog to create an article from one of the templates:
+
+ ![Image: Getting A Journal Template From The New R Markdown Dialogue](http://rmarkdown.rstudio.com/images/new_r_markdown.png)

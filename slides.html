@@ -19,9 +19,6 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -191,107 +188,6 @@ $(document).ready(function () {
 
 
 
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
-
-
 
 
 <div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
@@ -412,63 +308,26 @@ div.tocify {
 </div>
 
 
-<p><strong>Note:</strong> Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I’ve done this to help ease any confusion about which items to download.</p>
-<div id="step-1-download-install-r" class="section level2">
-<h2>Step 1: Download &amp; Install R</h2>
+<div id="the-r-markdown-workshop" class="section level2 tabset">
+<h2>The R Markdown Workshop</h2>
+<p>The tabs below contain the workshop video which you can stream here and the workshop slides which you can click through here. The demo documents can be downloaded by clicking the link below. My apologies for the unedited video copy, but I have limited time. That said, it’s kind of long. On the upside, you can fast-forward as you see it to be relevant!</p>
 <ul>
-<li><a href="https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg">Download link For Mac OS X</a></li>
+<li><a href="http://tug.org/cgi-bin/mactex-download/MacTeX.pkg">Download The Demo Documents</a></li>
 </ul>
+<div id="workshop-slides" class="section level3">
+<h3>Workshop Slides</h3>
+<iframe src="https://mrworthington.github.io/slides/lbj/rmarkdown/LBJ_Rmarkdown.html" class="gde-frame" style="height: 490px; width: 100%; border: none;" scrolling="yes">
+</iframe>
 </div>
-<div id="step-2-download-install-rstudio" class="section level2">
-<h2>Step 2: Download &amp; Install RStudio</h2>
-<ul>
-<li><a href="https://download1.rstudio.org/RStudio-1.1.423.dmg">Download link For Mac OS X 10.6+</a></li>
-</ul>
-</div>
-<div id="step-3-download-install-xquartz" class="section level2">
-<h2>Step 3: Download &amp; Install XQuartz</h2>
-<ul>
-<li><a href="https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg">Download link for XQuartz</a></li>
-</ul>
-</div>
-<div id="step-4-download-install-latex-for-mac-mactex" class="section level2 tabset">
-<h2>Step 4: Download &amp; Install Latex for Mac (MacTex)</h2>
-<ul>
-<li><a href="http://tug.org/cgi-bin/mactex-download/MacTeX.pkg">Download link for MacTex</a></li>
-</ul>
-<div id="instructions" class="section level3">
-<h3>Instructions</h3>
-<p>After downloading, move the file MacTeX.pkg to the desktop or another convenient spot, and double click it to install. Follow the straightforward instructions. Installation on a recent Macintosh takes four to six minutes.</p>
-</div>
-<div id="troubleshooting" class="section level3">
-<h3>Troubleshooting</h3>
-<p>At the end of installation, the installer will report “Success.” But sometimes, the installer puts up a dialog saying “Verifying…” and then the install hangs. In all cases known to us, rebooting the Macintosh fixes this problem. After the reboot, install again.</p>
-</div>
-</div>
-<div id="step-5-install-rmarkdown-with-rstudio" class="section level2 tabset">
-<h2>Step 5: Install <code>rmarkdown</code> with RStudio</h2>
-<div id="instructions-1" class="section level3">
-<h3>Instructions</h3>
-<ul>
-<li>Open RStudio from your applications folder.</li>
-<li><p>Then, copy &amp; paste this code into the console:</p>
-<pre class="r"><code>install.packages(&quot;rmarkdown&quot;)</code></pre></li>
-<li><p>If the console prompts you to install dependencies, type “y” and hit enter.</p></li>
-</ul>
-</div>
-<div id="console-example" class="section level3">
-<h3>Console Example</h3>
-<div class="figure">
-<img src="images/console.png" alt="Image: Once you paste the code, you should hit enter." />
-<p class="caption">Image: Once you paste the code, you should hit enter.</p>
-</div>
+<div id="workshop-video" class="section level3">
+<h3>Workshop Video</h3>
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/2hbSsvbLy4g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
 </div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 

@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>For Mac OS X Users</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52682113-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52682113-1');
+</script>
+
+<!-- Additional Javascript Resources -->
+<script src="libs/ace-1.2.3/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="libs/holder-2.9.0/holder.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="snippets/snippets.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Social Media Meta Information -->
+<meta property="og:site_name" content="R Markdown @ LBJ"/>
+<meta property="og:title" content="Pre-Workshop Actions"/>
+<meta property="og:description" content="Excited about the LBJ R Markdown Workshop? Great! To make this workshop run smoothly, complete the pre-workshop actions found here before you arrive."/>
+<meta property="og:image" content="images/banner.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:url" content="https://mrworthington.github.io/lbj/">
+<meta property="og:type" content="website"/>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+.tocify-subheader {
+  display: inline;
+}
+.tocify-subheader .tocify-item {
+  font-size: 0.95em;
+}
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">R Markdown @ LBJ</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Pre-Workshop
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="mac.html">
+        <span class="fa fa-apple fa-fw fa-lg"></span>
+         
+        Mac User Actions
+      </a>
+    </li>
+    <li>
+      <a href="windows.html">
+        <span class="fa fa-windows fa-fw fa-lg"></span>
+         
+        Windows User Actions
+      </a>
+    </li>
+    <li>
+      <a href="others.html">
+        <span class="fa fa-desktop fa-fw fa-lg"></span>
+         
+        Other User Actions
+      </a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="tutorials.html">
+        <span class="fa fa-play-circle fa-fw fa-lg"></span>
+         
+        Video Tutorials
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    The Workshop
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="slides.html">
+        <span class="fa fa-tv fa-fw fa-lg"></span>
+         
+        Slides
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Post-Workshop
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="learning.html">
+        <span class="fa fa-university fa-fw fa-lg"></span>
+         
+        Learning Resources
+      </a>
+    </li>
+    <li>
+      <a href="templates.html">
+        <span class="fa fa-clone fa-fw fa-lg"></span>
+         
+        R Markdown Templates
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:worthington.matthew@utexas.edu?Subject=Help%20with%20pre-workshop%20actions">Get Help</a>
+</li>
+<li>
+  <a href="https://github.com/mrworthington">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">For Mac OS X Users</h1>
+<h3 class="subtitle"><em>Pre-Workshop Actions</em></h3>
+
+</div>
+
+
+<p>Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I’ve done this to help ease any confusion about which items to download.</p>
+<div id="policy-memo-template" class="section level2 tabset">
+<h2>Policy Memo Template</h2>
+<ul>
+<li><a href="https://github.com/mrworthington/lbj/raw/master/rmarkdown/memo.zip">Download The Policy Memo Template</a></li>
+</ul>
+<div id="the-pdf-output" class="section level3">
+<h3>The PDF Output</h3>
+<iframe src="https://mrworthington.github.io/lbj/rmarkdown/Memo_Template/Memo_Template.pdf" class="gde-frame" style="height:500px; width: 100%; border: none;" scrolling="yes">
+</iframe>
+</div>
+<div id="the-r-markdown-code" class="section level3">
+<h3>The R Markdown Code</h3>
+<pre><code>---
+documentclass: article
+fontsize: 10pt # Options Include 10pt, 11pt, or 12pt
+header-includes:
+- \usepackage{crimson}
+- \usepackage[T1]{fontenc}
+- \usepackage[margin=1in]{geometry}
+- \renewcommand{\baselinestretch}{1}
+- \usepackage{calc}
+- \usepackage{enumitem}
+- \usepackage{changepage}
+output:
+  pdf_document:
+    number_sections: no # Yes if you wanted numbered sections
+  word_document: default
+urlcolor: blue
+---
+
+&lt;!---Note. This memo template is not intended to work with a Table of Contents. Do Not try to include a table of contents in this template.---&gt;
+&lt;!---THE MEMO HEADER. Edit Only The Text Next to \item---&gt;
+
+\vspace{-85pt}
+\text{\bfseries\LARGE{MEMORANDUM}}
+\newline
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-9pt}
+\setlist[2]{noitemsep}
+\begin{description}[leftmargin=!,itemsep=-1ex,labelwidth=\widthof{Subject:  }]
+  \item[To:] Your Memo Recipient, Their Title 
+  \item[From:] Your Name, Your Title 
+  \item[Date:] March 7, 2018 
+  \item[Subject:] \bfseries{A Really Compelling, Yet Boring Memo Subject Title}
+\end{description}
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-25pt}
+
+&lt;!---THE MEMO BODY. EDITS ALL PLAIN TEXT---&gt;
+
+## BACKGROUND
+\vspace{-10pt} &lt;!---Adjust space between headers and paragraph text as needed---&gt;
+
+
+Dillon Ipsum Julie Taylor, will you marry me? **Clear Eyes. Full Hearts.** Saracen, quarterback&#39;s a captain. CHAMPIONS DON&#39;T COMPLAIN![^1] Why don&#39;t you take your Members Only jacket off and hang it on the coat rack? Blood, sweat and tears - it all stays right here on this field, right now![^2] This is our dirt! This is our mud! This is ours, baby! Everybody leaves me! What&#39;s wrong with me? No matter what happens, no matter where you go, no matter what you do, I&#39;m gonna be right behind you. Always and always and always. There&#39;s a lot of dude talking going on out here. It&#39;s time for you to let Tim Riggins come home. You&#39;re gonna be the star quarterback of the DIllon Panthers next year. And you are gonna shine. 
+
+Sed ut Clear Eyes, Full Hearts...ehh we&#39;ll deal with that later. I turned the contract down. It&#39;s your turn, I wanna go to Philadelphia. Will you take me to Philadelphia please? You changed my life Coach. Maybe one day our dreams will merge together.[^3] To Mr. and Mrs. Saracen, cheers! I know that you guys think that I&#39;m young and that I&#39;m making the wrong decision and I&#39;m gonna drop out of college or whatever, but that&#39;s not me and you guys should know that. It&#39;s about getting to spend the rest of my life with my best friend. I want you to be on my side and trust me that I&#39;m making the right decision.I would not talk about your job at the art gallery, that&#39;s not reassuring for a football coach. 
+
+\vspace{-10pt} &lt;!---Adjust space between headers and paragraph text as needed---&gt;
+
+## THE NEED FOR LEADERSHIP
+\vspace{-10pt} &lt;!---Adjust space between headers and paragraph text as needed---&gt;
+
+At veto and remember you gotta win Friday night to make the playoffs. I guess we&#39;re fixin&#39; to find out. Lemme tell you something. I&#39;ll tell you what. Tonight is your night. You have an opportunity to go out there and accept the challenge. You have the opportunity to be a part of the team. If anybody&#39;s internal, I&#39;m internal. I&#39;m not here to make friends. This ain&#39;t my home. This ain&#39;t my school. It never will be. Moby Dick is actually the perfect metaphor for this town. You need to learn this offense, son. If you look at a girl like a geometry proof the answer is right in front of you.[^4] It&#39;s your job to find the missing variable. You gotta solve for x. Yeah, um, that&#39;s actually algebra. That&#39;s actually not the point. Do you understand? My truck ain&#39;t running. I don&#39;t hate you, Lyla. It&#39;d be a lot easier if I did. All right, listen up. You&#39;re a lousy ping-pong player. He&#39;s all bard and no bite. Oh, hell. Take a knee. Alright, y&#39;all. Today we&#39;re champions. Feels good, right? Enjoy it while it lasts, &#39;cause tomorrow we&#39;re targets.
+
+\vspace{-10pt} &lt;!---Adjust space between headers and paragraph text as needed---&gt;
+
+## RECOMMENDATION
+\vspace{-10pt} &lt;!---Adjust space between headers and paragraph text as needed---&gt;
+
+Dillon Ipsum _I&#39;ll tell you something else and don&#39;t you ever forget this._ I&#39;m starting to feel like I have some sort of repellent that repels females away and sends them running. I don&#39;t want to step on your fingers or anything but you might want to slice those a little thinner because cucumber sandwiches are pretty delicate. Did I just lose a lot of man points for that? Crucifictorious. You can&#39;t fake boosterism, Eric, it comes from the heart.[5] That&#39;s the beauty of it. Yeah, when we drive on the football field...we usually don&#39;t drive on our football field. Lyla, your dad&#39;s a sinner, I&#39;m a weak man, but it was one mistake. He&#39;s one of those &quot;I&#39;ll tell you something&quot; guys, isn&#39;t he? Hey look, y&#39;all keep tryin&#39;, but you ain&#39;t gonna catch me. Hey, don&#39;t hate, accelerate! Now, for as long as I know Tim Riggins, there&#39;s only two phrases that can put a smile on his face. Number 1: We&#39;re going to State. And Number 2: The results are in - you are not the father. **Texas forever.**
+
+&lt;!---BELOW ARE YOUR MEMO CITATIONS. ---&gt; 
+&lt;!---Note: Ensure the number of citations below matches the citation marks included above. ---&gt;
+
+[^1]: This is a footnote. You can copy references here and match them to the marks inserts in the plaintext above.
+
+[^2]: NAEP Report Cards - Home. (n.d.). Retrieved March 7, 2018, from https://www.nationsreportcard.gov/#
+
+[^3]: Or maybe they won&#39;t? 
+
+[^4]: Religions by Tradition(TR), Religion 2010 (InfoGroup). (n.d.). Social Explorer. Retrieved March 7, 2018, from https://www.socialexplorer.com/tables/Religion_InfoUSA10/R11617373. 
+
+[^5]: Among 15- to 24-year-olds enrolled in grades 10 through 12, percentage who dropped out (event dropout rate), by sex and race/ethnicity: 1972 through 2016. (n.d.). Retrieved March 7, 2018, from https://nces.ed.gov/programs/digest/d17/tables/dt17_219.55.asp?current=yes</code></pre>
+</div>
+</div>
+<div id="native-r-markdown-templates" class="section level2 tabset">
+<h2>Native R Markdown Templates</h2>
+<p>These are templates packages that can be installed using the <strong>Packages</strong> tab in your R Studio console or by installing using the <code>devtools</code> package through your console. Descriptions are taken from each packages <code>README.md</code> file on their github pages. I take no credit for the text, but have copied it here for convenience purposes.</p>
+<div id="papaja-apa-papers" class="section level3">
+<h3><code>papaja</code> (APA Papers)</h3>
+<ul>
+<li><a href="https://github.com/crsh/papaja/">Github Page for <code>papaja</code></a></li>
+</ul>
+<p><a href="https://github.com/crsh/papaja/"><code>papaja</code></a> is a R-package in the making including a <a href="http://rmarkdown.rstudio.com/">R Markdown</a> template that can be used with (or without) <a href="http://www.rstudio.com/">RStudio</a> to produce documents, which conform to the American Psychological Association (APA) manuscript guidelines (6th Edition). The package uses the LaTeX document class <a href="http://www.ctan.org/pkg/apa6">apa6</a> and a .docx-reference file, so you can create PDF documents, or Word documents if you have to. Moreover, <code>papaja</code> supplies R-functions that facilitate reporting results of your analyses in accordance with APA guidelines.</p>
+<p><strong>Note, at this point <code>papaja</code> is in active development and should be considered alpha. If you experience any problems, please <a href="https://github.com/crsh/papaja/issues">open an issue</a> on Github.</strong></p>
+<div id="examples" class="section level4">
+<h4>Examples</h4>
+<p>Take a look at the <a href="https://github.com/crsh/papaja/blob/master/example/example.Rmd">.Rmd</a> of the example manuscript in the folder <code>example</code> and the resulting <a href="https://raw.githubusercontent.com/crsh/papaja/master/example/example.pdf">.pdf</a>. The example document also contains some basic instructions.</p>
+</div>
+<div id="installation-requirements" class="section level4">
+<h4>Installation Requirements</h4>
+<p>To use <code>papaja</code> you need to make sure the following software is installed on your computer:</p>
+<ul>
+<li><a href="http://www.r-project.org/">R</a> (2.11.1 or later)</li>
+<li><a href="http://www.rstudio.com/">RStudio</a> (0.98.932 or later) is optional; if you don’t use RStudio, you need to install <a href="http://johnmacfarlane.net/pandoc/">pandoc</a> using the <a href="https://github.com/rstudio/rmarkdown/blob/master/PANDOC.md">instructions for your operating system</a></li>
+<li>A <a href="http://de.wikipedia.org/wiki/TeX">TeX</a> distribution (2013 or later; e.g., <a href="http://miktex.org/">MikTeX</a> for Windows, <a href="https://tug.org/mactex/">MacTeX</a> for Mac, obviously, or <a href="http://www.tug.org/texlive/">TeX Live</a> for Linux).
+<ul>
+<li><strong>Windows</strong> users should use MikTex if possible. Currently, pandoc and the Windows version of Tex Live <a href="https://github.com/rstudio/rmarkdown/issues/6">don’t seem to like each other</a>. Make sure you install the <em>complete</em>—not the basic—version.</li>
+<li><strong>Ubuntu 14.04</strong> users need a few additional TeX packages for the document class <code>apa6</code> to work:</li>
+</ul></li>
+</ul>
+<pre class="r"><code>sudo apt-get install texlive texlive-publishers texlive-fonts-extra texlive-latex-extra texlive-humanities lmodern</code></pre>
+</div>
+<div id="install-papaja" class="section level4">
+<h4>Install papaja</h4>
+<p>Once all of the requirements are taken care of, install <code>papaja</code> from GitHub:</p>
+<pre class="r"><code>devtools::install_github(&quot;crsh/papaja&quot;)</code></pre>
+</div>
+<div id="how-to-use-papaja" class="section level4">
+<h4>How to use papaja</h4>
+<p>Once <code>papaja</code> is installed, you can select the APA template when creating a new Markdown file through the RStudio menus.</p>
+<div class="figure">
+<img src="inst/images/template_selection.png" alt="APA template selection" />
+<p class="caption">APA template selection</p>
+</div>
+<p>If you want to add citations specify your BibTeX-file in the YAML front matter of the document (<code>bibliography: my.bib</code>) and you can start citing. If necessary, have a look at R Markdown’s <a href="http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html">overview of the citation syntax</a>. You may also be interested in <a href="github.com/crsh/citr">citr</a>, an R Studio addin to swiftly insert Markdown citations.</p>
+</div>
+</div>
+<div id="xaringan-presentations" class="section level3">
+<h3><code>xaringan</code> (Presentations)</h3>
+<ul>
+<li><a href="https://github.com/yihui/xaringan/">Github Page for <code>xaringan</code></a></li>
+</ul>
+<p>[ʃæ.’riŋ.ɡæn]</p>
+<p><a href="https://travis-ci.org/yihui/xaringan"><img src="https://travis-ci.org/yihui/xaringan.svg" alt="Build Status" /></a></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg" align="right" alt="Sharingan" width="100" /></p>
+<p>An R package for creating slideshows with <a href="http://remarkjs.com">remark.js</a> through R Markdown. The package name <strong>xaringan</strong> comes from <a href="http://naruto.wikia.com/wiki/Sharingan">Sharingan</a>, a dōjutsu in Naruto with two abilities: the “Eye of Insight” and the “Eye of Hypnotism”. A presentation ninja should have these basic abilities, and I think remark.js may help you acquire these abilities, even if you are not a member of the Uchiha clan.</p>
+<p>Please see the full documentation as a <a href="http://slides.yihui.name/xaringan/">presentation here</a> (<a href="http://slides.yihui.name/xaringan/zh-CN.html">中文版在此</a>). You can use <strong>devtools</strong> to install the package:</p>
+<div id="installation-usage" class="section level4">
+<h4>Installation &amp; Usage</h4>
+<pre class="r"><code>devtools::install_github(&#39;yihui/xaringan&#39;)</code></pre>
+<p>If you use RStudio, it is easy to get started from the menu <code>File -&gt; New File -&gt; R Markdown -&gt; From Template -&gt; Ninja Presentation</code>, and you will see an R Markdown example. Press the <code>Knit</code> button to compile it, or use the RStudio Addin <code>Infinite Moon Reader</code> to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded; make sure the Rmd document is on focus when you click the addin). Please see the <a href="https://github.com/yihui/xaringan/issues/2">issue #2</a> if you do not see the template or addin in RStudio.</p>
+<p>The main R Markdown output format in this package is <code>moon_reader()</code>. See the R help page <code>?xaringan::moon_reader</code> for all possible configurations.</p>
+</div>
+<div id="slide-formatting" class="section level4">
+<h4>Slide formatting</h4>
+<p>The <a href="https://github.com/gnab/remark/wiki">remark.js Wiki</a> contains detailed documentation about how to format slides and use the presentation (keyboard shortcuts). The <strong>xaringan</strong> package has simplified several things compared to the official remark.js guide, e.g. you don’t need a boilerplate HTML file, you can set the autoplay mode via an option of <code>moon_reader()</code>, and LaTeX math basically just works (TM). Please note that remark.js does not support Pandoc’s Markdown, so you will not be able to use any fancy Pandoc features, but that is probably fine for presentations. BTW, you can use raw HTML when you feel there is something you desparately want but cannot get from the basic Markdown syntax (e.g. <code>knitr::kable(head(iris), 'html')</code>).</p>
+<p>As the package title indicates, this package is designed for ninja. If you are a beginner of HTML/CSS, you may have to stick with the default CSS (which is not bad). The more you know about CSS, the more you can achieve with this package. The sky is your limit.</p>
+<p>We have a <a href="https://github.com/yihui/xaringan/wiki">wiki</a> that might help you to use CSS to alter the appeareance of your presentation. Make sure to check it out before opening an issue. You might also consider posting simple usage questions on <a href="https://stackoverflow.com/questions/tagged/xaringan">stackoverflow</a> using the <code>#xaringan</code>tag. We will read all questions with the <code>#xaringan</code> tag so please be patient if we don’t answer within a day :smile:</p>
+<p>Do not forget to try <a href="https://github.com/yihui/xaringan/issues/1">the option <code>yolo: true</code></a> under <code>xaringan::moon_reader</code> in the YAML metadata of your R Markdown document. Big thanks to <a href="http://slides.yihui.name/xaringan/karl.html">Karl Broman</a>!</p>
+</div>
+</div>
+<div id="other-r-markdown-formats" class="section level3">
+<h3>Other R Markdown Formats</h3>
+<p>R Markdown can produce all kinds of documents. <a href="https://rmarkdown.rstudio.com/formats.html">The comprehensive list of formats that can be produced by R Markdown can be found here</a>. Below are a few popular packages that are used around the interwebs, with a couple of links to learn more about them.</p>
+<div id="blogdown-for-making-a-blog-or-website" class="section level4">
+<h4><a href="https://bookdown.org/yihui/blogdown/"><code>blogdown</code></a> for Making A Blog or Website</h4>
+<ul>
+<li><strong>Installation:</strong> <code>install.packages(&quot;blogdown&quot;)</code></li>
+<li><strong>Tutorials</strong>
+<ul>
+<li><a href="https://alison.rbind.io/post/up-and-running-with-blogdown/">Up and running with blogdown</a> by Alison Hill</li>
+<li><a href="https://blogdown-demo.rbind.io">The Blogdown Tutorial Blog</a></li>
+</ul></li>
+</ul>
+</div>
+<div id="flexdashoard-for-making-a-blog-or-website" class="section level4">
+<h4><a href="https://rmarkdown.rstudio.com/flexdashboard/index.html"><code>flexdashoard</code></a> for Making A Blog or Website</h4>
+<ul>
+<li><strong>Installation:</strong> <code>install.packages(&quot;flexdashboard&quot;)</code></li>
+<li><strong>Tutorials</strong>
+<ul>
+<li><a href="https://rmarkdown.rstudio.com/flexdashboard/using.html">Basic Usage of <code>flexdashboard</code></a></li>
+<li><a href="https://rmarkdown.rstudio.com/flexdashboard/layouts.html">Layouts in <code>flexdashboard</code></a></li>
+<li><a href="https://rmarkdown.rstudio.com/flexdashboard/examples.html">Examples of <code>flexdashboard</code></a></li>
+</ul></li>
+</ul>
+</div>
+<div id="rticles-for-producing-journal-pdfs" class="section level4">
+<h4><a href="https://github.com/rstudio/rticles"><code>rticles</code></a> for producing journal PDFs</h4>
+<ul>
+<li><strong>Installation:</strong> <code>install.packages(&quot;rticles&quot;, type = &quot;source&quot;)</code></li>
+</ul>
+<div id="using-rticles-from-rstudio" class="section level5">
+<h5>Using rticles from RStudio</h5>
+<p>To use <strong>rticles</strong> from RStudio:</p>
+<ol style="list-style-type: decimal">
+<li><p>Install the latest <a href="http://www.rstudio.com/products/rstudio/download/">RStudio</a>.</p></li>
+<li><p>Install the <strong>rticles</strong> package:</p>
+<p>install.packages(“rticles”, type = “source”)</p></li>
+<li><p>Use the <strong>New R Markdown</strong> dialog to create an article from one of the templates:</p></li>
+</ol>
+<div class="figure">
+<img src="http://rmarkdown.rstudio.com/images/new_r_markdown.png" alt="Image: Getting A Journal Template From The New R Markdown Dialogue" />
+<p class="caption">Image: Getting A Journal Template From The New R Markdown Dialogue</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+
+</body>
+</html>

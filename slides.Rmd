@@ -1,0 +1,23 @@
+---
+title: "For Mac OS X Users"
+subtitle: Pre-Workshop Actions
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## The R Markdown Workshop {.tabset}
+
+The tabs below contain the workshop video which you can stream here and the workshop slides which you can click through here. The demo documents can be downloaded by clicking the link below. My apologies for the unedited video copy, but I have limited time. That said, it's kind of long. On the upside, you can fast-forward as you see it to be relevant!
+
+  * [Download The Demo Documents](http://tug.org/cgi-bin/mactex-download/MacTeX.pkg)
+
+### Workshop Slides
+
+<iframe src="https://mrworthington.github.io/slides/lbj/rmarkdown/LBJ_Rmarkdown.html" class="gde-frame" style="height: 490px; width: 100%; border: none;" scrolling="yes"></iframe>
+
+### Workshop Video
+
+<iframe width="100%" height="400" src="https://www.youtube-nocookie.com/embed/2hbSsvbLy4g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
