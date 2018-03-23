@@ -1,0 +1,79 @@
+---
+documentclass: article
+fontsize: 10pt # Options Include 10pt, 11pt, or 12pt
+header-includes:
+- \usepackage{crimson}
+- \usepackage[T1]{fontenc}
+- \usepackage[margin=1in]{geometry}
+- \renewcommand{\baselinestretch}{1}
+- \usepackage{calc}
+- \usepackage{enumitem}
+- \usepackage{changepage}
+output:
+  pdf_document:
+    number_sections: no # Yes if you wanted numbered sections
+  word_document: default
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+<!---Note. This memo template is not intended to work with a Table of Contents. Do Not try to include a table of contents in this template.--->
+<!---THE MEMO HEADER. Edit Only The Text Next to \item--->
+
+\vspace{-85pt}
+\text{\bfseries\LARGE{MEMORANDUM}}
+\newline
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-9pt}
+\setlist[2]{noitemsep}
+\begin{description}[leftmargin=!,itemsep=-1ex,labelwidth=\widthof{Subject:  }]
+  \item[To:] Your Memo Recipient, Their Title 
+  \item[From:] Your Name, Your Title 
+  \item[Date:] March 7, 2018 
+  \item[Subject:] \bfseries{A Really Compelling, Yet Boring Memo Subject Title}
+\end{description}
+\vspace{-10pt}
+\noindent\makebox[\linewidth]{\rule{\textwidth}{0.4pt}}
+\vspace{-25pt}
+
+<!---THE MEMO BODY. EDITS ALL PLAIN TEXT--->
+
+## BACKGROUND
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+
+Dillon Ipsum Julie Taylor, will you marry me? **Clear Eyes. Full Hearts.** Saracen, quarterback's a captain. CHAMPIONS DON'T COMPLAIN![^1] Why don't you take your Members Only jacket off and hang it on the coat rack? Blood, sweat and tears - it all stays right here on this field, right now![^2] This is our dirt! This is our mud! This is ours, baby! Everybody leaves me! What's wrong with me? No matter what happens, no matter where you go, no matter what you do, I'm gonna be right behind you. Always and always and always. There's a lot of dude talking going on out here. It's time for you to let Tim Riggins come home. You're gonna be the star quarterback of the DIllon Panthers next year. And you are gonna shine. 
+
+Sed ut Clear Eyes, Full Hearts...ehh we'll deal with that later. I turned the contract down. It's your turn, I wanna go to Philadelphia. Will you take me to Philadelphia please? You changed my life Coach. Maybe one day our dreams will merge together.[^3] To Mr. and Mrs. Saracen, cheers! I know that you guys think that I'm young and that I'm making the wrong decision and I'm gonna drop out of college or whatever, but that's not me and you guys should know that. It's about getting to spend the rest of my life with my best friend. I want you to be on my side and trust me that I'm making the right decision.I would not talk about your job at the art gallery, that's not reassuring for a football coach. 
+
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+## THE NEED FOR LEADERSHIP
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+At veto and remember you gotta win Friday night to make the playoffs. I guess we're fixin' to find out. Lemme tell you something. I'll tell you what. Tonight is your night. You have an opportunity to go out there and accept the challenge. You have the opportunity to be a part of the team. If anybody's internal, I'm internal. I'm not here to make friends. This ain't my home. This ain't my school. It never will be. Moby Dick is actually the perfect metaphor for this town. You need to learn this offense, son. If you look at a girl like a geometry proof the answer is right in front of you.[^4] It's your job to find the missing variable. You gotta solve for x. Yeah, um, that's actually algebra. That's actually not the point. Do you understand? My truck ain't running. I don't hate you, Lyla. It'd be a lot easier if I did. All right, listen up. You're a lousy ping-pong player. He's all bard and no bite. Oh, hell. Take a knee. Alright, y'all. Today we're champions. Feels good, right? Enjoy it while it lasts, 'cause tomorrow we're targets.
+
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+## RECOMMENDATION
+\vspace{-10pt} <!---Adjust space between headers and paragraph text as needed--->
+
+Dillon Ipsum _I'll tell you something else and don't you ever forget this._ I'm starting to feel like I have some sort of repellent that repels females away and sends them running. I don't want to step on your fingers or anything but you might want to slice those a little thinner because cucumber sandwiches are pretty delicate. Did I just lose a lot of man points for that? Crucifictorious. You can't fake boosterism, Eric, it comes from the heart.[5] That's the beauty of it. Yeah, when we drive on the football field...we usually don't drive on our football field. Lyla, your dad's a sinner, I'm a weak man, but it was one mistake. He's one of those "I'll tell you something" guys, isn't he? Hey look, y'all keep tryin', but you ain't gonna catch me. Hey, don't hate, accelerate! Now, for as long as I know Tim Riggins, there's only two phrases that can put a smile on his face. Number 1: We're going to State. And Number 2: The results are in - you are not the father. **Texas forever.**
+
+<!---BELOW ARE YOUR MEMO CITATIONS. ---> 
+<!---Note: Ensure the number of citations below matches the citation marks included above. --->
+
+[^1]: This is a footnote. You can copy references here and match them to the marks inserts in the plaintext above.
+
+[^2]: NAEP Report Cards - Home. (n.d.). Retrieved March 7, 2018, from https://www.nationsreportcard.gov/#
+
+[^3]: Or maybe they won't? 
+
+[^4]: Religions by Tradition(TR), Religion 2010 (InfoGroup). (n.d.). Social Explorer. Retrieved March 7, 2018, from https://www.socialexplorer.com/tables/Religion_InfoUSA10/R11617373. 
+
+[^5]: Among 15- to 24-year-olds enrolled in grades 10 through 12, percentage who dropped out (event dropout rate), by sex and race/ethnicity: 1972 through 2016. (n.d.). Retrieved March 7, 2018, from https://nces.ed.gov/programs/digest/d17/tables/dt17_219.55.asp?current=yes
+
+
