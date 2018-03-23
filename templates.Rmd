@@ -22,7 +22,7 @@ Clicking the links below will take you directly to the download file, which mean
 
 ### The R Markdown Code
 
-```
+```r
 ---
 documentclass: article
 fontsize: 10pt # Options Include 10pt, 11pt, or 12pt
