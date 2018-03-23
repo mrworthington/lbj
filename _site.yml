@@ -1,58 +1,59 @@
-name: "R Markdown @ LBJ"
-output_dir: "."
+name: R Markdown @ LBJ
+output_dir: '.'
 navbar:
-  title: "R Markdown @ LBJ"
+  title: R Markdown @ LBJ
   type: inverse
   left:
-    - text: "Home"
-      href: index.html
-    - text: "Pre-Workshop"
-      menu:
-      - text: "Mac User Actions"
-        icon: fa-apple fa-fw fa-lg
-        href: mac.html
-      - text: "Windows User Actions"
-        icon: fa-windows fa-fw fa-lg
-        href: windows.html
-      - text: "Other User Actions"
-        icon: fa-desktop fa-fw fa-lg
-        href: others.html
-      - text: "---------"
-      - text: "Video Tutorials"
-        icon: fa-play-circle fa-fw fa-lg
-        href: tutorials.html
-    - text: "The Workshop"
-      menu:
-      - text: "Slides"
-        icon: fa-tv fa-fw fa-lg
-        href: slides.html
-    - text: "Post-Workshop"
-      menu:
-      - text: "Learning Resources"
-        icon: fa-university fa-fw fa-lg
-        href: learning.html
-      - text: "R Markdown Templates"
-        icon: fa-clone fa-fw fa-lg
-        href: templates.html
+  - text: Home
+    href: index.html
+  - text: Pre-Workshop
+    menu:
+    - text: Mac User Actions
+      icon: fa-apple fa-fw fa-lg
+      href: mac.html
+    - text: Windows User Actions
+      icon: fa-windows fa-fw fa-lg
+      href: windows.html
+    - text: Other User Actions
+      icon: fa-desktop fa-fw fa-lg
+      href: others.html
+    - text: '---------'
+    - text: Video Tutorials
+      icon: fa-play-circle fa-fw fa-lg
+      href: tutorials.html
+  - text: The Workshop
+    menu:
+    - text: Slides
+      icon: fa-tv fa-fw fa-lg
+      href: slides.html
+  - text: Post-Workshop
+    menu:
+    - text: Learning Resources
+      icon: fa-university fa-fw fa-lg
+      href: learning.html
+    - text: R Markdown Templates
+      icon: fa-clone fa-fw fa-lg
+      href: templates.html
   right:
-    - text: "Get Help"
-      href: https://twitter.com/mrworthington
-    - icon: fa-github fa-lg
-      href: https://github.com/mrworthington
+  - text: Get Help
+    href: https://twitter.com/mrworthington
+  - icon: fa-github fa-lg
+    href: https://github.com/mrworthington
 output:
   html_document:
     fig_width: 6
     fig_height: 4
     fig_retina: 2
-    fig_caption: true
-    self_contained: false
+    fig_caption: yes
     theme: cosmo
     highlight: textmate
-    mathjax: null
-    lib_dir: libs
+    mathjax: ~
     css: css/styles.css
     include:
       in_header: header.html
     toc_depth: 3
     toc_float:
-      collapsed: false
+      collapsed: no
+    lib_dir: site_libs
+    self_contained: no
+

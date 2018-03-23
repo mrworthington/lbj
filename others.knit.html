@@ -11,7 +11,7 @@
 
 
 
-<title>For Mac OS X Users</title>
+<title>For Other Platforms</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,7 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52682113-1"></script>
 <script>
@@ -406,55 +405,43 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">For Mac OS X Users</h1>
+<h1 class="title toc-ignore">For Other Platforms</h1>
 <h3 class="subtitle"><em>Pre-Workshop Actions</em></h3>
 
 </div>
 
 
-<p><strong>Note:</strong> Clicking the links below will take you directly to the download file, which means a pkg will start downloading. I’ve done this to help ease any confusion about which items to download.</p>
+<p><strong>Note:</strong> Clicking the links below will take you directly to a page filled with download options, where you can determine the best option for your operating system. As much as I wish I could provide direct links, I don’t know your specific needs. That said, reach out if you have any questions and I’ll try to help as much as I can.</p>
 <div id="step-1-download-install-r" class="section level2">
 <h2>Step 1: Download &amp; Install R</h2>
 <ul>
-<li><a href="https://cran.rstudio.com/bin/macosx/R-3.4.3.pkg">Download link For Mac OS X</a></li>
+<li><a href="https://cran.rstudio.com">Download link For Other Platforms</a></li>
 </ul>
 </div>
 <div id="step-2-download-install-rstudio" class="section level2">
 <h2>Step 2: Download &amp; Install RStudio</h2>
 <ul>
-<li><a href="https://download1.rstudio.org/RStudio-1.1.423.dmg">Download link For Mac OS X 10.6+</a></li>
+<li><a href="https://www.rstudio.com/products/rstudio/download/#download">Download link For Other Platforms</a></li>
 </ul>
 </div>
-<div id="step-3-download-install-xquartz" class="section level2">
-<h2>Step 3: Download &amp; Install XQuartz</h2>
-<ul>
-<li><a href="https://dl.bintray.com/xquartz/downloads/XQuartz-2.7.11.dmg">Download link for XQuartz</a></li>
-</ul>
-</div>
-<div id="step-4-download-install-latex-for-mac-mactex" class="section level2 tabset">
-<h2>Step 4: Download &amp; Install Latex for Mac (MacTex)</h2>
-<ul>
-<li><a href="http://tug.org/cgi-bin/mactex-download/MacTeX.pkg">Download link for MacTex</a></li>
-</ul>
+<div id="step-3-install-rmarkdown-tinytex" class="section level2 tabset">
+<h2>Step 3: Install <code>rmarkdown</code> &amp; <code>tinytex</code></h2>
 <div id="instructions" class="section level3">
 <h3>Instructions</h3>
-<p>After downloading, move the file MacTeX.pkg to the desktop or another convenient spot, and double click it to install. Follow the straightforward instructions. Installation on a recent Macintosh takes four to six minutes.</p>
+<p>After you’ve Steps 1-3, follow these steps:</p>
+<ul>
+<li>Open RStudio from you applications folder.</li>
+<li><p>Then, copy &amp; paste this code into the console:</p>
+<pre class="r"><code>install.packages(&quot;devtools&quot;)</code></pre></li>
+<li><p>Next, copy and paste this code into the console:</p>
+<pre class="r"><code>devtools::install_github(c(&#39;yihui/tinytex&#39;, &#39;rstudio/rmarkdown&#39;)) +
+tinytex::install_tinytex()</code></pre></li>
+<li><p>If the console prompts you to install dependencies, type “y” and hit enter.</p></li>
+</ul>
 </div>
 <div id="troubleshooting" class="section level3">
 <h3>Troubleshooting</h3>
-<p>At the end of installation, the installer will report “Success.” But sometimes, the installer puts up a dialog saying “Verifying…” and then the install hangs. In all cases known to us, rebooting the Macintosh fixes this problem. After the reboot, install again.</p>
-</div>
-</div>
-<div id="step-5-install-rmarkdown-with-rstudio" class="section level2 tabset">
-<h2>Step 5: Install <code>rmarkdown</code> with RStudio</h2>
-<div id="instructions-1" class="section level3">
-<h3>Instructions</h3>
-<ul>
-<li>Open RStudio from your applications folder.</li>
-<li><p>Then, copy &amp; paste this code into the console:</p>
-<pre class="r"><code>install.packages(&quot;rmarkdown&quot;)</code></pre></li>
-<li><p>If the console prompts you to install dependencies, type “y” and hit enter.</p></li>
-</ul>
+<p>If you are having trouble installing <code>tinytex</code> on other platforms, please consult <a href="https://yihui.name/tinytex/faq/">the <code>tinytex</code> developer’s website</a> for information on your platform.</p>
 </div>
 <div id="console-example" class="section level3">
 <h3>Console Example</h3>
