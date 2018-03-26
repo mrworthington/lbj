@@ -1,5 +1,5 @@
 ---
-title: "Pre-Workshop Actions"
+title: "The LBJ R Markdown Workshop"
 output: html_document
 ---
 

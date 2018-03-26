@@ -1,6 +1,6 @@
 ---
-title: "For Mac OS X Users"
-subtitle: Pre-Workshop Actions
+title: "The R Markdown Workshop"
+subtitle: Slides & Workshop Video
 output: html_document
 ---
 

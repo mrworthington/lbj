@@ -1,6 +1,5 @@
 ---
-title: "For Mac OS X Users"
-subtitle: Pre-Workshop Actions
+title: "R Markdown Templates"
 output:
   html_document:
     toc: yes
