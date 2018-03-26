@@ -13,7 +13,7 @@ Clicking the links below will take you directly to the download file, which mean
 
 ## Policy Memo Template {.tabset}
 
-  * [Download The Policy Memo Template](https://github.com/mrworthington/lbj/raw/master/rmarkdown/memo.zip)
+  * [Download The Policy Memo Template](https://mrworthington.github.io/fileshare/memo.zip)
   
 ### The PDF Output
 
